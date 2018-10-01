@@ -6,11 +6,13 @@ source 'https://rubygems.org'
  end
  
  # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
- gem 'rails', '~> 5.1.2'
+ gem 'rails'
+ gem 'bootsnap'
  
  group :production do
    # Use pg as the production database for Active Record
    gem 'pg'
+   gem 'rails_12factor'
  end
  
  group :development do
