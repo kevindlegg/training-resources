@@ -5,3 +5,14 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+require 'random_data'
+require 'faker'
+
+10.times do
+    Resource.create!(
+      title:  Faker::Book.title,
+      resource_type:   RandomData.random_resource_type,
+      vendor: Faker::Company.title
+    )
+  end
+  resources = Resource.all
