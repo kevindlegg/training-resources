@@ -47,3 +47,5 @@ source 'https://rubygems.org'
     gem 'factory_bot_rails'
     gem 'faker'
   end
+
+  gem 'bootstrap-sass'
